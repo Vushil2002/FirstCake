@@ -1,0 +1,20 @@
+.cardsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.RecSecDesc {
+    margin: 10px 190px;
+    display: flex;
+    flex-direction: column;
+    h2{
+        margin: 5px 0;
+    }
+}
+
+.RecSecCards {
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,72 @@
+
+.HeaderSection {
+    background-image: url("../../Assets/images/headerBackground.jpg");
+    height: 493px;
+    width: 1242px;
+    object-fit: cover;
+    margin: 3rem auto;
+}
+
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    display: flex;
+    /* flex-direction: row; */
+    img {
+        margin: 0 20px;
+    }
+}
+
+.Navlinks {
+    display: flex;
+    flex-direction: column;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+    }
+}
+
+.SearchBox {
+    color: rgb(148, 148, 148);
+    margin: 8px 0 0 160px;
+    width: 270px;
+    height: 35px;
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    img{
+        margin: 2px 10px 0 0;
+    }
+    p{
+        margin: 5px;
+    }
+    background-color: white;
+    border-radius: 6px;
+}
+
+.UserProfile {
+    align-items: center;
+    margin: 5px 0 0 auto;
+    justify-content: center;
+    display: flex;
+    img {
+        border: solid 2px white;
+        border-radius: 20px;
+    }
+}
