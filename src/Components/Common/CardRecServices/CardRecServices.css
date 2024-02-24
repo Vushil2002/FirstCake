@@ -7,7 +7,21 @@
     height: 300px;
     object-fit: cover;
     margin: 15px;
+    opacity: 0.9;
     h1{
         margin: 0;
+    }
+    p{
+        margin: 5px 0;
+    }
+}
+
+.Content {
+    width: 100%;
+    background-color: white ;
+    opacity: 0.72;
+    padding-bottom: 80px;
+    button{
+        opacity: 1;
     }
 }
