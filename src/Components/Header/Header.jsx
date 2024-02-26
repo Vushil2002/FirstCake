@@ -7,10 +7,10 @@ import pfp from "../../Assets/images/pfp.png"
 import Carousel from "../Carousel/Carousel"
 
 const Header = () => {
-    return(
+    return (
         <section className="HeaderSection">
             <div className="Header">
-                <img src={logo} alt="logo"/>
+                <img src={logo} alt="logo" />
                 <div className="Navlinks">
                     <ul>
                         <li><a href="./">Home</a></li>
@@ -21,15 +21,24 @@ const Header = () => {
                 </div>
                 <div className="SearchBox">
                     <p>Search</p>
-                    <img src={searchIcon} alt="q" height={26}/>
+                    <img src={searchIcon} alt="q" height={26} />
                 </div>
                 {/* <input placeholder="Search"></input> */}
                 <div className="UserProfile">
-                    <img src={pfp} alt="pr"/>
-                    <button>John Doe</button>
+                    <img src={pfp} alt="pr" />
+
+                    {/* <label for="profile">John Doe</label> */}
+                    <div className="ProfileDropdown">
+                        <select name="profile" id="profile">
+                            <option value="name">John Doe</option>
+                            <option value="email">Email</option>
+                            <option value="phone">Phone No.</option>
+                            <option value="signOut">Sign Out</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-            <Carousel/>
+            <Carousel />
         </section>
     )
 }
