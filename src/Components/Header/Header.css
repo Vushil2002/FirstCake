@@ -13,7 +13,8 @@
     justify-content: center;
     padding: 20px;
     display: flex;
-
+    z-index: 10;
+    position: relative;
     /* flex-direction: row; */
     img {
         margin: 0 20px;
@@ -65,6 +66,8 @@
     display: flex;
     font-size: 15px;
     justify-content: space-between;
+    background-color: white;
+    border-radius: 6px;
 
     img {
         margin: 2px 10px 0 0;
@@ -73,9 +76,6 @@
     p {
         margin: 5px;
     }
-
-    background-color: white;
-    border-radius: 6px;
 }
 
 .UserProfile {
@@ -116,5 +116,93 @@
         li a {
             font-size: small;
         }
+    }
+}
+
+@media( max-width: 1024px ) {
+    .HeaderSection {
+        background-image: url("../../Assets/images/headerBackground.png");
+        height: 380px;
+        max-width: 600px;
+        object-fit: cover;
+        margin: 3rem auto;
+    }
+    .Navlinks{
+        display: none;
+    }
+    .SearchBox {
+        display: none;;
+    }
+    
+    .ProfileDropdown {
+        display: none;
+    }
+}
+
+.HamBur{
+    display: none;
+}
+
+.Hidden {
+    display: none;
+}
+.MobileMenu {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .Header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        button {
+            background-color: transparent;
+            border: none;
+        }
+    }
+    .UserProfile {
+        align-items: center;
+        margin: 0;
+        width: 20px;
+        img {
+            border: solid 2px white;
+            border-radius: 20px;
+        }
+    }
+    .HamBur{
+        display: block;
+    }
+    
+    /* MobileMenu */
+    .MobileMenu {
+        z-index: 11;
+        top: 57px;
+        display: flex;
+        position: absolute;
+        width: auto;
+        height: auto;
+        background-color: #d7e2c9b6;
+        border-radius: 6px;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            text-align: start;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        li {
+            width: 90px;
+            padding: 7px 10px;
+        }
+        li:hover {
+            background-color: #d7e2c9;
+        }
+    }
+    .Hidden {
+        display: none;
     }
 }

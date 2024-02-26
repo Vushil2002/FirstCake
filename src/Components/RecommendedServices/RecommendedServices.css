@@ -27,18 +27,42 @@
 }
 
 @media( max-width: 1300px ) {
-    
-.RecSecDesc {
+    .RecSecDesc {
         margin: 10px 290px;
         display: flex;
         flex-direction: column;
         h2{
-            font-size: x-large;
+            font-size: large;
             margin: 5px 0;
         }
         a {
             color: #308afb;
             text-decoration: none;
         }
+        p {
+            font-weight: 400;
+        }
+    }
 }
+
+@media (max-width: 1024px) {
+    .RecSecDesc {
+        margin: 10px 244px;
+        display: flex;
+        flex-direction: column;
+        h2{
+            color: #425656;
+            margin: 5px 0;
+        }
+        a {
+            color: #308afb;
+            text-decoration: none;
+            display: none;
+        }
+    }
+    .RecSecCards {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
 }

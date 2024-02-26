@@ -23,7 +23,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    justify-content: center;
     img {
         margin: auto 5px;
     }
@@ -52,6 +51,31 @@
         margin-right: 10%;
         p {
             font-size: small;
+        }
+    }
+}
+
+@media( max-width: 1024px ) {
+    .FooterLinkSection {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img {
+            margin: auto 5px;
+        }
+    }
+    .FooterLinks {
+        /* margin-right: 14%; */
+        width: 80%;
+        margin: 0 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            margin: 8px;
         }
     }
 }

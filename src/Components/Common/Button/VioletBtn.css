@@ -17,7 +17,14 @@
 
 @media( max-width: 1300px ) {
     .VioletColor {
-        padding: 7px 15px;
+        padding: 8px 17px;
         font-size: 13px;
+    }
+}
+@media( max-width: 1024px ) {
+    .VioletColor {
+        padding: 8px 15px;
+        font-size: 13px;
+        position: absolute;
     }
 }
