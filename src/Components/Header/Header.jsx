@@ -54,11 +54,8 @@ const Header = () => {
                         <button onClick={handleSubmit} type="button"><img src={searchIcon} alt="Q" width={20}></img></button>
                     </form>
                 </div>
-                {/* <input placeholder="Search"></input> */}
                 <div className="UserProfile">
                     <img src={pfp} alt="pr" />
-
-                    {/* <label for="profile">John Doe</label> */}
                     <div className="ProfileDropdown">
                         <select name="profile" id="profile">
                             <option value="name">John Doe</option>

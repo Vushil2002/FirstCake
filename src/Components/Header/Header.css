@@ -59,34 +59,6 @@
     }
 }
 
-/* .SearchBox {
-    border-radius: 6px;
-    color: rgb(148, 148, 148);
-    margin: 8px 0 0 160px;
-    width: auto;
-    height: auto;
-    display: flex;
-    font-size: 15px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    input {
-        height: 19px;
-    }
-    button {
-        height: 25px;
-        padding: 0;
-        margin: 0;
-    }
-    img {
-        
-    }
-
-    p {
-        margin: 5px;
-    }
-} */
-
 .search input[type=text] {
     width: 300px;
     height: 30px;
